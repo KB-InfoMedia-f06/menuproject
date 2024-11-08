@@ -18,19 +18,19 @@ public partial class Main : Node2D
 	public void SetScene(int id){
 		BaseScene currentScene = null;
 		switch (id){
-			case -1:
+			case BaseScene.QUIT_ID:
 				//Quit
 				GetTree().Quit();
 				break;
-			case 0:
+			case BaseScene.GAME_SCENE_ID:
 				//game start
 				currentScene = GameScene.Instantiate<BaseScene>();
 				break;
-			case 1:
+			case BaseScene.SETTINGS_MENU_ID:
 				//settings
 				currentScene = SettingsMenuScene.Instantiate<BaseScene>();
 				break;
-			case 2:
+			case BaseScene.MAIN_MENU_ID:
 				//main menu
 				currentScene = MainMenuScene.Instantiate<BaseScene>();
 				break;

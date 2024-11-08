@@ -4,6 +4,6 @@ using System;
 public partial class SettingMenu : BaseScene
 {
 	public void OnBackButtonPressed(){
-		EmitSignal(SignalName.SceneChange, 2);
+		EmitSignal(SignalName.SceneChange, MAIN_MENU_ID);
 	}
 }
